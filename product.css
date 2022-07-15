@@ -84,7 +84,7 @@ body {
 
 .bg-dark1 {
   --bs-bg-opacity: 1;
-  background-color: #03041a!important;
+  background-color: #03041a00!important;
 }
 
 

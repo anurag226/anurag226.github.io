@@ -10,7 +10,7 @@
     <title>Resume | Anurag Sinha</title>
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans:300" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    
+    <link rel="stylesheet" href="http://anijs.github.io/lib/anicollection/anicollection.css">
 
     
 
@@ -22,6 +22,7 @@
 
 <link rel="stylesheet" href="./assets/dist/css/custom.css">
 <link rel="stylesheet" href="./assets/dist/css/card.css">
+<link rel="stylesheet" href="./assets/dist/css/particle.css">
 
     <style>
       .bd-placeholder-img {
@@ -81,19 +82,21 @@
     <link href="product.css" rel="stylesheet">
   </head>
   <body style="background-color: #000;">
+    <div id="particles-js">
+
+    </div>
     <div class="protected content bg-indigo">
+      
 <header class="site-header sticky-top py-1">
   <nav class="container d-flex flex-column flex-md-row justify-content-between">
     <a class="py-2" href="#" aria-label="Product">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="d-block mx-auto" role="img" viewBox="0 0 24 24"><title>Product</title><circle cx="12" cy="12" r="10"/><path d="M14.31 8l5.74 9.94M9.69 8h11.48M7.38 12l5.74-9.94M9.69 16L3.95 6.06M14.31 16H2.83m13.79-4l-5.74 9.94"/></svg>
     </a>
-    <a class="py-2 d-none d-md-inline-block" href="#profile">Profile</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Product</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Features</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Enterprise</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Support</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Pricing</a>
-    <a class="py-2 d-none d-md-inline-block" href="#">Cart</a>
+    <button class="raise" onclick="location.href='#profile'" type="button" style="padding: 0; border: none; background: none;">Profile</button>
+    <button class="raise" onclick="location.href='#profile'" type="button" style="padding: 0; border: none; background: none;">Profile</button>
+    <button class="raise" onclick="location.href='#profile'" type="button" style="padding: 0; border: none; background: none;">Profile</button>
+    <button class="raise" onclick="location.href='#profile'" type="button" style="padding: 0; border: none; background: none;">Profile</button>
+    <button class="raise" onclick="location.href='#profile'" type="button" style="padding: 0; border: none; background: none;">Profile</button>
   </nav>
 </header>
 
@@ -101,12 +104,12 @@
   <div class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center text-white bg-dark1" id="profile">
     <div class="card bg-dark1 text-white">
       <div class="row g-0">
-        <div class="col-md-4">
+        <div class="col-md-4" id="avatar">
           <img src="./assets/avatar.jpg" class="img-fluid rounded-start" alt="..." style="border-radius: 50%; margin-top: 20px;">
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h1 class="card-title" style="text-align: left; color: #00FFAB;">Anurag Sinha</h1>
+            <h1 class="card-title" id="avatar" style="text-align: left; color: #00FFAB;">Anurag Sinha</h1>
             <p class="card-text" style="text-align: left; color: #FF008E;">@front-end developer</p>
             <h5 class="card-title" style="text-align: left; color: #FFD36E;"><i class="bi-person-fill"></i> Profile</h5>
             <p class="card-text" style="text-align: left; color: #FFF56D;">Courteous and enthusiastic, I am interested in IT and everything in its orbit. I was fascinated by web programming during my college days. Started my career as a front-end developer in a company, I gained working experience in this field. I am keen to gain more experience in the field. For this reason, I am looking for a company willing to offer me a placement among their developers. In return, I will offer my full commitment, and be a pleasant and friendly addition to your team. I am therefore currently looking for a job as a front-end developer.</p>
@@ -118,7 +121,7 @@
     </div>
   </div>
 
-
+<br><br><br>
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
     
     <div class="bg-dark1 me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
@@ -192,10 +195,29 @@
       </div>
     </div>
   </div>
+  <br><br>
+  <h2 class="display-5" style="text-align: center; color: #00FFAB;">Did you like my resume?</h2>
+  <br>
+  <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
+    <div class="bg-dark1 me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+        <button class="raise" data-anijs="if:click, do: hinge animated, to: #nope" style="padding: 0; border: none; background: none;"><svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-emoji-frown" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+        </svg></button>
+    </div>
+
+
+    <div class="bg-dark1 me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+      <button class="raise" data-anijs="if:click, do: hinge animated, to: #yes" style="padding: 0; border: none; background: none;"><svg xmlns="http://www.w3.org/2000/svg" width="55" height="55" fill="currentColor" class="bi bi-emoji-heart-eyes" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path d="M11.315 10.014a.5.5 0 0 1 .548.736A4.498 4.498 0 0 1 7.965 13a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .548-.736h.005l.017.005.067.015.252.055c.215.046.515.108.857.169.693.124 1.522.242 2.152.242.63 0 1.46-.118 2.152-.242a26.58 26.58 0 0 0 1.109-.224l.067-.015.017-.004.005-.002zM4.756 4.566c.763-1.424 4.02-.12.952 3.434-4.496-1.596-2.35-4.298-.952-3.434zm6.488 0c1.398-.864 3.544 1.838-.952 3.434-3.067-3.554.19-4.858.952-3.434z"/>
+      </svg></button>
+    </div>
+  </div>
 <br><br>
   <h2 class="display-5" style="text-align: center; color: #00FFAB;"><i class="bi-person-lines-fill"></i> Get In Touch</h2>
   <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-dark1 me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="bg-dark1 me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" id="nope">
       <div class="card fancy-border bg-dark1">
         <div class="card-body">
           <h5 class="card-title" style="text-align: left; color: #00FFAB;">Front-end Developer</h5>
@@ -208,7 +230,7 @@
     </div>
 
 
-    <div class="bg-dark1 me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
+    <div class="bg-dark1 me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden" id="yes">
       <div class="card fancy-border bg-dark1">
         <div class="card-body">
           <div class="mb-3">
@@ -227,38 +249,10 @@
         </div>
       </div>
     </div>
-
-
-
   </div>
 
-  <!-- Form -->
 
-  <!-- <div class="d-md-flex flex-md-equal w-100 my-md-3 ps-md-3">
-    <div class="bg-dark1 me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center text-white overflow-hidden">
-      <div class="my-3 p-3">
-        <h2 class="display-5" style="text-align: center; color: #00FFAB;"><i class="bi-person-lines-fill"></i> Contact</h2>
-        <p class="lead">And an even wittier subheading.</p>
-      </div>
-      <div class="card fancy-border bg-dark1">
-        <div class="card-body">
-          <form action="https://formspree.io/f/mayvgrda" method="POST">
-          <label>
-            Your email:
-            <input type="email" name="email">
-          </label>
-          <label>
-            Your message:
-            <textarea name="message"></textarea>
-          </label>
-          
-          <button type="submit">Send</button>
-        </form>
-        </div>
-      </div>
-    </div>
 
-  </div> -->
 
 
 </main>
@@ -316,7 +310,14 @@
     <script src='https://code.jquery.com/jquery-3.4.1.slim.min.js'></script>
     <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
     <script src="./assets/dist/js/bootstrap.bundle.min.js"></script>
-
+      <!-- AniJS core library -->
+  <script src="https://anijs.github.io/lib/anijs/anijs-min.js"></script> 
+  
+  <!-- Include to use $addClass, $toggleClass or $removeClass -->
+  <script src="https://anijs.github.io/lib/anijs/helpers/dom/anijs-helper-dom-min.js"></script>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>\
+  <script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script  src="./assets/dist/js/particle.js"></script>
       
   </body>
 </html>
